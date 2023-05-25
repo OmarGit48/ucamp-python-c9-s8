@@ -1,5 +1,7 @@
 import sys
 
+## LONGITUD DE UNA PRASE
+print ('LONGITUD DE UNA FRASE')
 #Crear un programa para identificar la longitud de una palabra ingresada. 
 # La palabra correcta debe tener entre cuatro y ocho letras. 
 # toma en cuenta las siguientes consideraciones:
@@ -21,3 +23,35 @@ if longitud < 4 :
 # Sobran letras. Tiene N letras ((siendo N el número de letras de la palabra))
 if longitud > 8 :
     print (f'Sobran letras. Tiene {longitud} letras')
+
+############################################################################## 
+    
+## ENCUENTRA EL CUADRANTE
+ 
+print ('ENCUENTRA EL CUADRANTE')
+
+# Crear un programa que en base a 2 números de entrada, coordenadas, identifique en cuál 
+# de los 4 cuadrantes se encuentra el punto. El programa debe verificar que ninguna 
+# coordenada sea 0. Por ejemplo
+
+# Ingrese X:
+x = int(input('Escribe el valor de X: '))
+# Ingrese Y:
+y = int(input('Escribe el valor de Y: '))
+
+    
+    
+# El punto se encuentra en el cuadrante ??
+
+if x > 0 and y > 0 :
+    print('El punto se encuentra en el cuadrante I')
+if x > 0 and y < 0 :
+    print('El punto se encuentra en el cuadrante IV')
+if x < 0 and y < 0 :
+    print ('El punto se encuentra en el cuadrante III')
+if x < 0 and y > 0 :
+    print ('El punto se encuentra en el cuadrante II')
+elif x == 0 or y == 0:
+    print ('Los valores deben ser diferentes de 0')
+    
+
