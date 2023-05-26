@@ -7,7 +7,8 @@ print ('LONGITUD DE UNA FRASE')
 # toma en cuenta las siguientes consideraciones:
 palabra = input('Ingresa una palabra entre 4 y 8 caracteres: ')
 
-# Si la longitud de la palabra se encuentra en el rango de cuatro a ocho letras, 
+# Si la longitud de 1
+# la palabra se encuentra en el rango de cuatro a ocho letras, 
 # se debe imprimir un mensaje que indique que la palabra es correcta
 longitud = len(palabra)
 
@@ -45,13 +46,13 @@ y = int(input('Escribe el valor de Y: '))
 
 if x > 0 and y > 0 :
     print('El punto se encuentra en el cuadrante I')
-if x > 0 and y < 0 :
+elif x > 0 and y < 0 :
     print('El punto se encuentra en el cuadrante IV')
-if x < 0 and y < 0 :
+elif x < 0 and y < 0 :
     print ('El punto se encuentra en el cuadrante III')
-if x < 0 and y > 0 :
+elif x < 0 and y > 0 :
     print ('El punto se encuentra en el cuadrante II')
-elif x == 0 or y == 0:
+else :
     print ('Los valores deben ser diferentes de 0')
     
 
